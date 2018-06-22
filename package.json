@@ -1,0 +1,21 @@
+{
+  "name": "physx-node",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawwn/physx-node.git"
+  },
+  "author": "Shawn Presser <shawnpresser@gmail.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/shawwn/physx-node/issues"
+  },
+  "homepage": "https://github.com/shawwn/physx-node#readme"
+}
