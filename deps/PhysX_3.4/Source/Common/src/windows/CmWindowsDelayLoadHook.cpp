@@ -79,4 +79,5 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 	return NULL;
 }
 
-PfnDliHook __pfnDliNotifyHook2 = delayHook;
+// node-gyp generates this
+//PfnDliHook __pfnDliNotifyHook2 = delayHook;
