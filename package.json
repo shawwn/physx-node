@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "test": "node .",
     "install": "node-gyp rebuild"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/shawwn/physx-node/issues"
   },
-  "homepage": "https://github.com/shawwn/physx-node#readme"
+  "homepage": "https://github.com/shawwn/physx-node#readme",
+  "dependencies": {
+    "nan": "^2.10.0"
+  }
 }
