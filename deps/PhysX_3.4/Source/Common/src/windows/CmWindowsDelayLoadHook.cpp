@@ -47,7 +47,7 @@ using namespace physx;
 
 #pragma comment(lib, "delayimp")
 
-FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
+static FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 {
 	switch (dliNotify) {
 	case dliStartProcessing :
@@ -79,5 +79,4 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 	return NULL;
 }
 
-// node-gyp generates this
-//PfnDliHook __pfnDliNotifyHook2 = delayHook;
+static PfnDliHook __pfnDliNotifyHook2 = delayHook;
